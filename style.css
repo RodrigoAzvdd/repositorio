@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    width: 32px;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
+}
+
+.box {
+    padding-bottom: 100px;
+    width: 320px;
+    text-align: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text {
+    padding-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input {
+    height: 50px;
+    border: 1px solid #c5c8ca;
+    border-radius: 3px;
+    padding-left: 20px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #0fa37f;
+}
+
+.submitBtn {
+    height: 50px;
+    font-size: 17px;
+    color: #fff;
+    background-color: #0fa37f;
+    border: 1px solid #33907a;
+    border-radius: 3px;
+}
+
+.btn {
+    height: 50px;
+    border: 1px solid #c5c8ca;
+    background-color: transparent;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: #e7ebee;
+}
+
+.signUp {
+    text-decoration: none;
+    color: #319275;
+}
+
+.createAccount {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.orOptions {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #c5c8ca;
+}
+
+.continueOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.google {
+    background-image: url('https://logosvg.com.br/logos/google-37.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 13px;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 45px;
+}
+
+.microsoft {
+    padding-left: 45px;
+    font-size: 17px;
+    text-align: left;
+    background-image: url('https://pngimg.com/uploads/microsoft/microsoft_PNG13.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 13px;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .box {
+        width: 85%;
+    }
+}
